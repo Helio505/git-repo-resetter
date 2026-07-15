@@ -1,21 +1,21 @@
-.env
+# Python Stuff
 temp.py
-
-__pycache__/
+*.mypy_cache/
+pytest_cache/
 **/__pycache__/
+.venv/
+venv/
+.env/
+env/
+*.py[cod]
+tempCodeRunnerFile.*
+
+# Other
+.env
 data/
 hold/
-src/__pycache__/
-venv/
-
-token_cache.*
-.mypy_cache/
-.pytest_cache/
-*.py[cod]
-*.log
 .coverage
-lib
-tempCodeRunnerFile.*
 TEMP.md
-
+token_cache.*
+*.log
 *.code-workspace
