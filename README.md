@@ -34,3 +34,7 @@ https://imgs.xkcd.com/comics/git_commit.png
 ```python
 python main.py
 ```
+
+## Print
+
+![Screenshot_1](assets/screenshot_1.png)
