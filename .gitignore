@@ -16,5 +16,6 @@ token_cache.*
 .coverage
 lib
 tempCodeRunnerFile.*
+TEMP.md
 
 *.code-workspace
