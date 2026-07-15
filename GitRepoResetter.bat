@@ -8,8 +8,8 @@ cd /d "%~dp0"
 @REM Define o caminho do ambiente virtual
 set VENV_PATH=.venv\Scripts\activate.bat
 @REM Define o comando a ser executado
-@REM set PYTHON_CMD=start "" python main.py %*
-set PYTHON_CMD=start "" pythonw main.py %*
+set PYTHON_CMD=start "" python main.py %*
+@REM set PYTHON_CMD=start "" pythonw main.py %*
 
 @REM Verifica se existe um ambiente virtual Python na pasta atual
 if exist "%VENV_PATH%" (

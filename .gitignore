@@ -24,3 +24,5 @@ lib
 
 # Ini
 config.ini
+
+*.code-workspace
