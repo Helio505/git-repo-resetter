@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnSave": true,
+  "ruff.enable": true,
+  // disable autopep8 formatting
+  "autopep8.args": ["--ignore", "E501"]
+}

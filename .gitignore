@@ -1,0 +1,26 @@
+.env
+relevant_api_docs.txt
+temp.py
+mstodo_export.txt
+local_storage/
+
+__pycache__/
+**/__pycache__/
+data/
+hold/
+src/__pycache__/
+webversion/
+ToDo_Analyser_Web/
+venv/
+requirements.txt
+
+token_cache.*
+.mypy_cache/
+.pytest_cache/
+*.py[cod]
+*.log
+.coverage
+lib
+
+# Ini
+config.ini
