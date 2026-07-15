@@ -1,36 +1,36 @@
-@REM Script para executar o script Python com ambiente virtual
-@REM Se um ambiente virtual existe, ativa-o e executa o script Python
-@REM Caso contrário, executa o script diretamente.
+@REM Script to run the Python script using a virtual environment
+@REM If a virtual environment exists, activates it and runs the Python script
+@REM Otherwise, runs the script directly.
 
 @echo off
 cd /d "%~dp0"
 
-@REM Define o caminho do ambiente virtual
+@REM Defines the virtual environment path
 set VENV_PATH=.venv\Scripts\activate.bat
-@REM Define o comando a ser executado
+@REM Defines the command to be executed
 set PYTHON_CMD=start "" python main.py %*
 @REM set PYTHON_CMD=start "" pythonw main.py %*
 
-@REM Verifica se existe um ambiente virtual Python na pasta atual
+@REM Checks if a Python virtual environment exists in the current folder
 if exist "%VENV_PATH%" (
-    echo Ativando ambiente virtual...
+    echo Activating virtual environment...
     call "%VENV_PATH%"
     %PYTHON_CMD%
     deactivate
 ) else (
-    echo Nenhum ambiente virtual encontrado. Executando diretamente...
+    echo No virtual environment found. Running directly...
     %PYTHON_CMD%
 )
 
-@REM Verifica o código de saída do script Python
+@REM Checks the exit code of the Python script
 if %errorlevel% neq 0 (
     echo.
-    echo Erro ao executar o script Python.
-    echo Código de erro: %errorlevel%
-    echo Verifique se o ambiente virtual está configurado corretamente e se todas as dependências estão instaladas.
+    echo Error executing the Python script.
+    echo Error code: %errorlevel%
+    echo Please check if the virtual environment is properly configured and if all dependencies are installed.
     echo.
 ) else (
-    echo Script executado com sucesso.
+    echo Script executed successfully.
 )
-@REM NÃO Mantém o terminal aberto após a execução
+@REM Does NOT keep the terminal open after execution
 @REM pause
